@@ -1,3 +1,4 @@
+
 {
   "name": "hardhat-boilerplate",
   "version": "1.0.0",
@@ -37,7 +38,7 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts": "^5.0.0",
     "@openzeppelin/contracts-upgradeable": "^5.0.0"
   }
 }
