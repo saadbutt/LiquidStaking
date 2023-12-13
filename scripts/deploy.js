@@ -15,21 +15,21 @@ async function main() {
 
   // ethers is available in the global scope
   const [deployer] = await ethers.getSigners();
-  console.log(
+  console.log (
     "Deploying the contracts with the account:",
     await deployer.getAddress()
   );
 
   console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  const Token = await ethers.getContractFactory("Token");
-  const token = await Token.deploy();
+  const Token = await ethers.getContractFactory("NFT22");
+  const token = await Token.deploy(await deployer.getAddress(),"https://meta.travala.com/");
   await token.deployed();
 
   console.log("Token address:", token.address);
-
+  // 0x459652A3A468A2F1DE1af671bE9Dbe711Ac96393
   // We also save the contract's artifacts and address in the frontend directory
-  saveFrontendFiles(token);
+  // saveFrontendFiles(token);
 }
 
 function saveFrontendFiles(token) {

@@ -1,6 +1,6 @@
 node_modules
 .idea
-
+hardhat.config.js
 #Hardhat files
 cache
 artifacts
