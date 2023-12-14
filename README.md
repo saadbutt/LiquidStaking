@@ -1,13 +1,23 @@
-# Hardhat Boilerplate
+# Liquid Staking Smart Contract
 
-This repository contains a sample project that you can use as the starting point
-for your Ethereum project. It's also a great fit for learning the basics of
-smart contract development.
+## Overview
 
-This project is intended to be used with the
-[Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
-able to follow it by yourself by reading the README and exploring its
-`contracts`, `tests`, `scripts` and `frontend` directories.
+The Liquid Staking Smart Contract is a decentralized finance (DeFi) contract developed on the Ethereum blockchain. It allows users to stake ERC20 tokens and receive a tokenized representation of their staked assets (e.g., stETH). The contract implements a staking mechanism with rewards, a gas-efficient design, and protection against reentrancy attacks.
+
+## Features
+
+- **Staking Mechanism:** Users can stake ERC20 tokens to earn rewards based on a predefined reward rate.
+- **Tokenization:** The contract mints an ERC-20 compliant token (e.g., stETH) to represent the user's share in the staking pool.
+- **Gas Efficiency:** The contract is optimized for gas efficiency using the latest Solidity version.
+- **Security Measures:** Basic security features are implemented to prevent common vulnerabilities like reentrancy attacks.
+
+## Running the Contract
+
+1. **Install Dependencies:**
+   Ensure you have Node.js and npm installed. Install project dependencies:
+
+   ```bash
+   npm install
 
 ## Quick start
 
